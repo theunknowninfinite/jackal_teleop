@@ -1,0 +1,18 @@
+<launch>
+  <include file="$(find jackal_gazebo)/launch/jackal_world.launch">
+        <arg name="config" value="front_laser"/>
+    </include>
+
+<include file="$(find jackal_navigation)/launch/amcl_demo.launch">
+        <arg name="map_file" value="$(find jackal_teleop)/maps/small_home.yaml"/>
+</include>
+
+<include file="$(find jackal_viz)/launch/view_robot.launch">
+        <arg name="config" value="localization"/>
+</include>
+
+<node name="move_base_py" pkg="jackal_teleop" type="move_base.py" output="screen"  launch-prefix="xterm -e"/>
+
+<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_viz)/rviz/localization.rviz" required="true" /> -->
+
+</launch>

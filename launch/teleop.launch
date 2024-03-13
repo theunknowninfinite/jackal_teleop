@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find jackal_gazebo)/launch/jackal_world.launch"/>
+
+
+    <node name="jackal_teleop" pkg="jackal_teleop" type="teleop.py" output="screen" launch-prefix="xterm -e" />
+
+</launch>
