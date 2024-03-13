@@ -1,12 +1,12 @@
-# ENPM690 Homework 3
-This folder contains the work done for Homework 3.
+# Jackal Teleop and Navigation in a Custom Gazebo World
 
-This repo contains the dockerfile required to build and the package as a containerized app.
+This repo contains the work done for Homework 3.
+It also contains the dockerfile required to build and the package as a containerized app.
 The required steps to run it are given below.
 
 # Jackal Teleop and Move Base
 
-This package contains the necessary launch files to run the teleop and move base based AMCL navigation functionalities for Jackal using ROS 1 Noetic.
+This package contains the necessary launch files to run the teleop using keyboard and AMCL navigation functionalities for Jackal using ROS 1 Noetic.
 
 ## Prerequisites
 
@@ -90,7 +90,7 @@ That's it!
 
 ## Running the Docker File
 
-Ensure that you are using a X11 based desktop environment and you have enabled display output for docer containers by running
+Ensure that you are using a X11 based desktop environment and you have enabled display output for docker containers by running
 
     ```bash
     xhost +local:*
